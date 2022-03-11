@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@900&display=swap');
+:root {
+    --black: #17171F;
+    --puple: #5B4FA1;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body{
+    background-color: var(--black);
+    size: 10px;
+}
+
+
+/* Navbar*/
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--black);
+    z-index: 1;
+}
+
+.cabecalho h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: white;
+    margin-left: 62px;
+    transform: translateY(-100px);
+    animation-name: cair;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .0s;
+}
+
+.cabecalho ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 65px;
+}
+
+.nav_item_one{
+    transform: translateY(-100px);
+    animation-name: cair;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .1s;
+}
+
+.nav_item_two{
+    transform: translateY(-100px);
+    animation-name: cair;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .2s;
+}
+.nav_item_three{
+    transform: translateY(-100px);
+    animation-name: cair;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+}
+.nav_item_four{
+    transform: translateY(-100px);
+    animation-name: cair;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .4s;
+}
+.nav_item_five{
+    transform: translateY(-100px);
+    animation-name: cair;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+@keyframes cair {
+    to{
+        transform: translateY(0);
+    }
+}  
+
+.cabecalho a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    
+}
+
+
+
+
+.cabecalho a img{
+   height: 56px;
+   width: 62px;
+}
+
+
+.botao_nav{
+   background-color: var(--puple);
+   padding: 0.5rem 2rem;
+   line-height: 42px;
+   border-radius: 30px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 24px;
+   color: white;
+   font-weight: 500;
+   border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Banner */
+
+#banner{
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+.banner_text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+}
+
+.buttom_work{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#banner h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 96px;
+    color: white;
+    
+
+}
+
+.buttom_work{
+    align-items: center;
+    gap: 26px;
+    padding: 0.5rem 4rem;
+    background-color: var(--puple);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: white;
+    line-height: 70px;
+}
+
+.eye_icon{
+    height: 55px;
+    width: 55px;
+}
+
+.imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+
+.img_one{
+    top: 13rem;
+    height: 100px;
+    width: 149px;
+    position: absolute;
+    right: 30rem;
+    opacity: 1;
+    z-index: 1;
+    animation-name: sumir;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    
+}
+.img_one:hover{
+    animation-name: sumir;
+   animation-duration: 0.2s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes sumir {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+    
+}
+
+.img_two{
+    height: 463px;
+    width: 498px;
+}
+
+.img_three{
+    margin-top: 10.6rem;
+    height: 100px;
+    width: 149px;
+    position: relative;
+    z-index: 0;
+}
+
+
+
+
+
+/* Work*/
+
+#work{
+    padding: 60px;
+    
+}
+
+.title_work{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: white;
+    margin-left: 6rem;
+    margin-bottom: 7rem;
+    margin-top: 5rem;
+
+}
+
+.projetos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+.padding_projeto{
+    padding-left: 6rem;
+}
+
+.projetos_div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    
+}
+
+.projetos h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+
+.projetos p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white;
+    display: block;
+    width: 400px;
+   
+}
+
+.projetos img{
+    height: 255px;
+    width: 400px;
+}
+
+
+.projetos button{
+    margin-right: 180px;
+    line-height: 30px;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background-color: #DB9999;
+}
+
+
+/* About me*/
+#abme{
+    padding: 60px;
+    margin-bottom: 4rem;
+}
+
+#abme h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: white;
+    margin-left: 6rem;
+    margin-bottom: 30px;
+    margin-top: 5rem;
+   
+}
+
+.sobre_mim{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+.sobremim_foto{
+    height: 500px;
+    width: 420px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px 9px #FFFFFF;
+    margin-bottom: 2rem;
+}
+
+.sobre_mim_text{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.sobre_mim p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    width: 400px;
+    height: 40px;
+}
+
+.pg_top{
+    padding-top: 150px;
+}
+
+.displaytecnologias{
+    display: flex;
+    flex-direction: column !important;
+    gap: 20px;
+}
+
+.tecnologiastext{
+    width: 10px;
+    margin-top: 20px;
+    height: 20px !important;
+    font-size: 16px !important;
+}
+
+#backend{
+    height: 20px !important;
+    font-size: 16px !important;
+}
+
+.sobremin_icons{
+    display: flex;
+    gap: 40px;
+    height: 40px !important;
+}
+
+.sobremin_icon{
+    display: flex;
+    flex-direction: column;
+}
+
+#html{
+    font-size: 8px;
+    padding-left: 10px;
+    width: 20px;
+}
+
+#css{
+    font-size: 8px;
+    padding-left: 12px;
+    width: 20px;
+}
+
+#javascript{
+    font-size: 8px;
+    padding-left: 0px;
+    width: 20px;
+}
+
+#react{
+    font-size: 8px;
+    padding-left: 5px;
+    width: 20px;
+}
+
+#spring{
+    font-size: 8px;
+    padding-left: 0px;
+    width: 20px;
+}
+
+#mysql{
+    font-size: 8px;
+    padding-left: 8px;
+    width: 20px;
+}
+
+#github{
+    font-size: 8px;
+    padding-left: 5px;
+    width: 20px;
+}
+
+/* Contato*/
+
+#contact{
+    padding: 0px;
+    margin-bottom: 4rem;
+}
+
+
+#contact h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: white;
+    margin-left: 6rem;
+    margin-bottom: 80px;
+    margin-top: 7rem;
+   
+}
+
+
+.contact_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 200px;
+}
+
+.contact_photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_photos_1{
+    height: 399px;
+    width: 340px;
+}
+
+.icons_gap{
+    display: flex;
+    gap: 3rem;
+}
+
+.contact_photos_icons{
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+}
+
+#contact label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.contact_text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact_text_li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact_menu input{
+    border: none;
+    padding: 1rem 1rem;
+    
+    
+}
+
+.contact_menu textarea{
+    border: none;
+    padding: 1rem 1rem;
+}
+
+.button_contact{
+    align-items: center;
+    gap: 26px;
+    padding: 0.5rem 20rem;
+    background-color: var(--puple);
+    outline: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: white;
+    line-height: 70px;
+    border: 10px solid #FFFFFF;
+}
+
