@@ -1,0 +1,91 @@
+.back-to-top{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .cabecalho{
+        justify-content: space-around;
+    }
+
+    .cabecalho ul{
+        display: none;
+    }
+
+    .hamburguer{
+        display: block;
+        margin-right: 12rem;
+        margin-left: 40px;
+    }
+
+    .cabecalho h1{
+        font-size: 24px;
+        margin-left: 10.5rem;
+    }
+
+    #banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .banner_text{
+        margin-top: 10rem;
+        margin-left: 36rem;
+    }
+
+    #banner h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 43px;
+        color: white;
+        width: 300px;
+    }
+
+    .buttom_work{
+        padding: 0.2rem 2rem;
+        line-height: 20px;
+        font-size: 18px;
+    }
+
+    .eye_icon{
+        height: 36px;
+        width: 36px;
+    }
+
+    .img_one{
+        left: 70%;
+        top: 60%;
+    }
+
+    .img_two{
+        height: 501px;
+        width: 353px;
+        margin-left: 30rem;
+    }
+
+
+    .img_three{
+        left: 100%;
+        margin-top: 43px;
+    }
+
+    .title_work{
+        margin-left: 23rem;
+        font-size: 24px;
+        width: 300px;
+    }
+    .projetos_div{
+        margin-left: 10rem;
+    }
+    .projetos img{
+        width: 263px;
+    }
+
+    .projetos h1 {
+        font-size: 18px;
+    }
+
+    .projetos p{
+        width: 300px;
+    }
+}
