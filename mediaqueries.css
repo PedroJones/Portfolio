@@ -9,10 +9,13 @@
 }
 
 @media screen and (max-width: 800px) {
-
+    body{
+        width: 375px;
+    }
     /* Navbar*/
     .cabecalho{
         justify-content: space-around;
+        gap: 60px;
     }
 
     .cabecalho ul{
@@ -28,14 +31,12 @@
     }
     .hamburguer{
         display: block;
-        right: 5%;
-        top: 50%;
         cursor: pointer;
+        margin-right: 0rem;
     }
 
     .cabecalho h1{
         font-size: 24px;
-        margin-left: 10.5rem;
     }
 
     .navmobile{
@@ -71,7 +72,7 @@
 
     .banner_text{
         margin-top: 18rem;
-        margin-left: 36rem;
+        
     }
 
     #banner h1{
@@ -99,19 +100,17 @@
     .img_two{
         height: 501px;
         width: 353px;
-        margin-left: 30rem;
+        
     }
 
 
     .img_three{
-        left: 100%;
         margin-top: 43px;
     }
 
 
     /* Work*/
     .title_work{
-        margin-left: 23rem;
         font-size: 24px;
         width: 300px;
     }
@@ -119,15 +118,13 @@
         display: flex;
         flex-direction: column;
         align-items:center;
-        padding-left: 6rem !important; 
+        
     }
 
     .padding_projeto{
         padding-left: 0rem;
     }
-    .projetos_div{
-        margin-left: 10rem;
-    }
+
     .projetos img{
         width: 263px;
     }
@@ -145,14 +142,12 @@
         font-size: 24px;
         color: white;
         width: 300px;
-        margin-left: 23rem;
         margin-bottom: 60px;
         margin-top: 5rem;
     }
     .sobre_mim{
         display: flex;
         flex-direction: column;
-        margin-left: 28rem;
         gap: 20px;
     }
     .sobremim_foto{
@@ -172,7 +167,6 @@
 
     /* Contato*/ 
     #contact h1 {
-        margin-left: 23rem;
         font-size: 24px;
         width: 300px;
         
@@ -181,7 +175,7 @@
     .contact_menu{
         display: flex;
         flex-direction: column;
-        margin-left: 20rem;
+        margin-left: 45px;
         gap: 20px;
     }
 
