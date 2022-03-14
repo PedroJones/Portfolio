@@ -2,7 +2,15 @@
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1512px){
+    .img_one{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    /* Navbar*/
     .cabecalho{
         justify-content: space-around;
     }
@@ -11,10 +19,18 @@
         display: none;
     }
 
+    .cabecalho a img{
+        display: none;
+    }
+    
+    .botao_nav{
+        display: none;
+    }
     .hamburguer{
         display: block;
-        margin-right: 12rem;
-        margin-left: 40px;
+        right: 5%;
+        top: 50%;
+        cursor: pointer;
     }
 
     .cabecalho h1{
@@ -22,6 +38,30 @@
         margin-left: 10.5rem;
     }
 
+    .navmobile{
+        display: block
+    }
+    .navlinks_mobile{
+        display: flex;
+        flex-direction: column;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .navlinks_mobile.open {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        pointer-events: all;
+      }
+
+      .navlinks_mobile a{
+          font-size: 12px;
+      }
+
+
+      /* Banner */
     #banner{
         display: flex;
         flex-direction: column;
@@ -30,7 +70,7 @@
     }
 
     .banner_text{
-        margin-top: 10rem;
+        margin-top: 18rem;
         margin-left: 36rem;
     }
 
@@ -53,8 +93,7 @@
     }
 
     .img_one{
-        left: 70%;
-        top: 60%;
+        display: none;
     }
 
     .img_two{
@@ -69,10 +108,22 @@
         margin-top: 43px;
     }
 
+
+    /* Work*/
     .title_work{
         margin-left: 23rem;
         font-size: 24px;
         width: 300px;
+    }
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding-left: 6rem !important; 
+    }
+
+    .padding_projeto{
+        padding-left: 0rem;
     }
     .projetos_div{
         margin-left: 10rem;
@@ -87,5 +138,72 @@
 
     .projetos p{
         width: 300px;
+    }
+
+    /* About Me*/
+    #abme h1 {
+        font-size: 24px;
+        color: white;
+        width: 300px;
+        margin-left: 23rem;
+        margin-bottom: 60px;
+        margin-top: 5rem;
+    }
+    .sobre_mim{
+        display: flex;
+        flex-direction: column;
+        margin-left: 28rem;
+        gap: 20px;
+    }
+    .sobremim_foto{
+        width: 254px;
+        height: 259px;
+        border: 30px solid #FFFFFF;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 212px;
+        box-shadow: none;
+
+    }
+
+    .sobre_mim p{
+        font-size: 14px;
+        width: 250px;
+    }
+
+    /* Contato*/ 
+    #contact h1 {
+        margin-left: 23rem;
+        font-size: 24px;
+        width: 300px;
+        
+    }
+
+    .contact_menu{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20rem;
+        gap: 20px;
+    }
+
+    .contact_photos_1{
+        width: 266px;
+        height: 269px;
+        
+    }
+
+    .contact_menu input{
+        padding: 5px 5px;
+        width:300px;
+    }
+
+    .contact_menu textarea{
+        width:300px;
+    }
+
+    .button_contact{
+        line-height: 30px;
+        width:300px;
+        font-size: 24px;
+        padding: 0.5rem 0rem;
     }
 }
