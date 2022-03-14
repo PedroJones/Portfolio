@@ -2,9 +2,19 @@
     display: none;
 }
 
-@media screen and (max-width: 1512px){
+@media screen and (max-width: 1517px){
     .img_one{
         display: none;
+    }
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        
+    }
+
+    .padding_projeto{
+        padding-left: 0rem;
     }
 }
 
@@ -72,7 +82,6 @@
       .navlinks_mobile a{
           font-size: 20px;
           margin-left: 20rem;
-
       }
 
 
