@@ -14,8 +14,11 @@
     }
     /* Navbar*/
     .cabecalho{
-        justify-content: space-around;
-        gap: 60px;
+        padding: 2rem 0rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        width: 400px;
     }
 
     .cabecalho ul{
@@ -30,35 +33,46 @@
         display: none;
     }
     .hamburguer{
-        display: block;
+        display: flex;
         cursor: pointer;
         margin-right: 0rem;
+        z-index: 1;
     }
 
     .cabecalho h1{
         font-size: 24px;
+        margin-left: 10px;
+        width: 200px;
     }
 
     .navmobile{
-        display: block
+        display: flex;
+        position: fixed;
     }
     .navlinks_mobile{
-        display: flex;
+        
+        display: none;
         flex-direction: column;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        opacity: 0;
         transition: all 1s ease-out;
         pointer-events: none;
+        margin-top: 20rem;
+        
     }
 
     .navlinks_mobile.open {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         pointer-events: all;
+        opacity: 1;
+        display: flex;
+        background-color: var(--black);
+        width: 500px;
+        height: 20vh;
       }
 
       .navlinks_mobile a{
-          font-size: 12px;
+          font-size: 20px;
+          margin-left: 20rem;
+
       }
 
 
